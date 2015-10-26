@@ -1,0 +1,39 @@
+{
+  "name": "frontend-stack-boilerplate",
+  "version": "0.1.0",
+  "description": "Frontend stack boilerplate which involves ES6, Jspm, Gulp, Sass",
+  "main": "./src/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kevin Nguyen",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^6.0.3",
+    "browser-sync": "^2.9.8",
+    "cssgrace": "^2.0.2",
+    "del": "^2.0.2",
+    "gulp": "^3.9.0",
+    "gulp-batch": "^1.0.5",
+    "gulp-concat": "^2.6.0",
+    "gulp-postcss": "^6.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.0.4",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-task-listing": "^1.0.1",
+    "gulp-util": "^3.0.6",
+    "gulp-watch": "^4.3.5",
+    "jspm": "^0.16.13",
+    "postcss": "^4.1.16",
+    "postcss-reporter": "^1.2.1",
+    "require-dir": "^0.3.0",
+    "run-sequence": "^1.1.4"
+  },
+  "jspm": {
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.8.24",
+      "babel-runtime": "npm:babel-runtime@^5.8.24",
+      "core-js": "npm:core-js@^1.1.4"
+    }
+  }
+}

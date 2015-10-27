@@ -16,7 +16,7 @@ gulp.task('help', taskListing);
 
 // Build task
 gulp.task('build', function(callback) {
-  runSequence('clean', 'sass-bootstrap', 'sass', callback);
+  runSequence('clean', 'sass', callback);
 });
 
 // Static server powered by Browser Sync

@@ -26,17 +26,8 @@ gulp.task('sass', function(done) {
     // PostCSS
     .pipe(postcss(postcssPlugins))
     .on('error', done)
-    .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest(utils.destPath + '/styles/'));
-});
-
-gulp.task('sass-bootstrap', function(done) {
-  return gulp.src(utils.srcPath + '/styles/bootstrap/bootstrap.scss')
-    .pipe(sourcemaps.init())
-    .pipe(sass().on('error', sass.logError))
-    // PostCSS
-    .pipe(postcss(postcssPlugins))
-    .on('error', done)
-    .pipe(sourcemaps.write('.'))
+    .pipe(sourcemaps.write('.', {
+        sourceRoot: '/src/scss'
+    }))
     .pipe(gulp.dest(utils.destPath + '/styles/'));
 });

@@ -10,24 +10,24 @@ var utils = require('./_utils');
 var autoprefixer = require('autoprefixer');
 var reporter = require("postcss-reporter")
 var postcssPlugins = [
-  autoprefixer({
-    browsers: ['last 2 versions'],
-  }),
-  require('cssgrace'),
-  reporter({
-    clearMessages: true,
-  })
+    autoprefixer({
+        browsers: ['last 2 versions']
+    }),
+    require('cssgrace'),
+    reporter({
+        clearMessages: true
+    })
 ];
 
 gulp.task('sass', function(done) {
-  return gulp.src(utils.srcPath + '/styles/scss/main.scss')
-    .pipe(sourcemaps.init())
-    .pipe(sass().on('error', sass.logError))
-    // PostCSS
-    .pipe(postcss(postcssPlugins))
-    .on('error', done)
-    .pipe(sourcemaps.write('.', {
-        sourceRoot: '/src/scss'
-    }))
-    .pipe(gulp.dest(utils.destPath + '/styles/'));
+    return gulp.src(utils.srcPath + '/styles/scss/main.scss')
+        .pipe(sourcemaps.init())
+        .pipe(sass().on('error', sass.logError))
+        // PostCSS
+        .pipe(postcss(postcssPlugins))
+        .on('error', done)
+        .pipe(sourcemaps.write('.', {
+            sourceRoot: '/src/scss'
+        }))
+        .pipe(gulp.dest(utils.destPath + '/styles/'));
 });

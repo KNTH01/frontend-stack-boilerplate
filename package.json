@@ -24,7 +24,6 @@
     "gulp-util": "^3.0.6",
     "gulp-watch": "^4.3.5",
     "jspm": "^0.16.13",
-    "postcss": "^4.1.16",
     "postcss-reporter": "^1.2.1",
     "require-dir": "^0.3.0",
     "run-sequence": "^1.1.4"

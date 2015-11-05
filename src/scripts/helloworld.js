@@ -1,10 +1,10 @@
 export default class HelloWorld {
 
-  constructor() {
-    this.name = "Toto";
-  }
+    constructor() {
+        this.name = 'Toto';
+    }
 
-  greet() {
-    console.log("Hello " + this.name);
-  }
+    greet() {
+        console.log('Hello ' + this.name);
+    }
 }

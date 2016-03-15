@@ -2,7 +2,7 @@
 
 This is very first project on `Github` which represents my personal front-end stack at this moment. This latter involves:
 
-* ECMAScript 6
+* [ECMAScript 6](https://github.com/lukehoban/es6features)
 * [jspm](http://jspm.io/)
 * [Gulp](http://gulpjs.com/)
 * [Sass](http://sass-lang.com/)

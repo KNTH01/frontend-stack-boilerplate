@@ -1,6 +1,8 @@
 # README #
 
-This is very first project on `Github` which represents my personal front-end stack at this moment. This latter involves:
+**Important (16/09/16): I consider this stack to be out-to-date. It needs a little refresh.**
+
+This is my very first project on `Github` which represents my personal front-end stack at this moment. This latter involves:
 
 * [ECMAScript 6](https://github.com/lukehoban/es6features)
 * [jspm](http://jspm.io/)
